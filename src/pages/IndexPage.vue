@@ -1,7 +1,7 @@
 <template>
 <div class="q-pa-md" style="max-width: 400px">
     <q-form @submit="onSubmit" @reset="onReset" class="q-gutter-md">
-        <q-input filled v-model="name" label="Your name *" hint="Name and surname" lazy-rules :rules="[val => (val && val.length > 0) || 'Please type something']" />
+        <q-input filled v-model="name" label="Your name*" hint="Name and surname" lazy-rules :rules="[val => (val && val.length > 0) || 'Please type something']" />
 
         <q-input filled type="number" v-model.number="age" label="Your age *" lazy-rules :rules="[
         val => (val !== null && val !== '') || 'Please type your age',
